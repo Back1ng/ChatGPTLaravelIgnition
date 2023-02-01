@@ -1,5 +1,6 @@
 {
   "name": "back1ng/chatgptlaravelignition",
+  "description": "Adds the ChatGPT response to the error hint from laravel-ignition",
   "autoload": {
     "psr-4": {
       "Back1ng\\ChatGPTLaravelIgnition\\": "src/"
