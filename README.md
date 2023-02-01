@@ -22,6 +22,7 @@ php artisan vendor:publish --provider="Back1ng\ChatGPTLaravelIgnition\ServicePro
 Add <b>OPENAI_API_KEY</b> to your .env
 ```php
 OPENAI_API_KEY=sk-...
+OPENAI_MAX_TOKENS=256 //optional
 ```
 
 Now for each error, there will be a request to ChatGPT.

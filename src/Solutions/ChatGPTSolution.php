@@ -2,6 +2,7 @@
 
 namespace Back1ng\ChatGPTLaravelIgnition\Solutions;
 
+use Back1ng\ChatGPTLaravelIgnition\Enums\GPTModelEnum;
 use InvalidArgumentException;
 use OpenAI;
 use Spatie\Ignition\Contracts\BaseSolution;
@@ -26,9 +27,14 @@ final class ChatGPTSolution implements HasSolutionsForThrowable
     public function getSolutionDescription(Throwable $throwable): string
     {
         $apiKey = config('back1ng-laravel-ignition.api_key');
+        $maxTokens = config('back1ng-laravel-ignition.max_tokens');
 
         if (! is_string($apiKey)) {
             throw new InvalidArgumentException('Incorrect Api Key given.');
+        }
+
+        if (! is_int($maxTokens)) {
+            throw new InvalidArgumentException("Incorrect Max Tokens given.");
         }
 
         $requestString = sprintf(
@@ -41,9 +47,9 @@ final class ChatGPTSolution implements HasSolutionsForThrowable
         $client = OpenAI::client($apiKey);
 
         $result = $client->completions()->create([
-            'model' => 'text-davinci-003',
+            'model' => GPTModelEnum::davinci->value,
             'prompt' => $requestString,
-            'max_tokens' => 256,
+            'max_tokens' => $maxTokens,
         ]);
 
         return $result['choices'][0]['text'];
