@@ -2,7 +2,7 @@
 
 Install package via composer:
 ```php
-composer require back1ng/chatgptlaravelignition
+composer require back1ng/chatgptlaravelignition --dev
 ```
 
 Add this solution to your ignition.php config
