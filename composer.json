@@ -1,4 +1,5 @@
 {
+  "name": "back1ng/chatgptlaravelignition",
   "autoload": {
     "psr-4": {
       "Back1ng\\ChatGPTLaravelIgnition\\": "src/"
