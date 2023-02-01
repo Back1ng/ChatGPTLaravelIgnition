@@ -1,6 +1,8 @@
+![Example of usage](img/example.png)
+
 <b>Installation:</b><br>
 
-Install package via composer:
+Install package via composer with <b>--dev</b> flag:
 ```php
 composer require back1ng/chatgptlaravelignition --dev
 ```
