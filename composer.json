@@ -17,5 +17,6 @@
         "Back1ng\\ChatGPTLaravelIgnition\\ServiceProvider"
       ]
     }
-  }
+  },
+  "minimum-stability": "dev"
 }
