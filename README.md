@@ -1,5 +1,10 @@
 <b>Installation:</b><br>
 
+Install package via composer:
+```php
+composer require back1ng/chatgptlaravelignition
+```
+
 Add this solution to your ignition.php config
 ```php
     'solution_providers' => [
