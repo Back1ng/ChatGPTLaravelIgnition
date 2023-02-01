@@ -1,0 +1,7 @@
+parameters:
+    level:
+        max
+    paths:
+        - src
+    ignoreErrors:
+        - '#is not allowed to extend#'

@@ -30,5 +30,16 @@
         "Back1ng\\ChatGPTLaravelIgnition\\ServiceProvider"
       ]
     }
+  },
+  "require-dev": {
+    "phpstan/extension-installer": "^1.2",
+    "phpstan/phpstan-strict-rules": "^1.4",
+    "thecodingmachine/phpstan-strict-rules": "^1.0",
+    "ergebnis/phpstan-rules": "^1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
   }
 }
