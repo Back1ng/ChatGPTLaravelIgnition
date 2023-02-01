@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Back1ng\\ChatGPTLaravelIgnition\\": "src/"
+    }
+  },
+  "require": {
+    "openai-php/client": "^0.3.0",
+    "spatie/laravel-ignition": "^1.0|^2.0",
+    "laravel/framework": "^8.0|^9.0"
+  }
+}
