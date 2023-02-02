@@ -1,5 +1,5 @@
 {
-  "name": "back1ng/chatgptlaravelignition",
+  "name": "back1ng/chatgpt-laravel-ignition",
   "description": "Adds the ChatGPT response to the error hint from laravel-ignition",
   "keywords": [
     "dev",
